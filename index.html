@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Rock, Paper, Scissors</h1>
+        <div id="scoreboard">
+            <p><strong>Your Score:</strong> <span id="user-score">0</span></p>
+            <p><strong>Computer Score:</strong> <span id="computer-score">0</span></p>
+        </div>
+
+        <div id="choices">
+            <p><strong>Your Choice:</strong> <span id="user-choice">None</span></p>
+            <p><strong>Computer's Choice:</strong> <span id="computer-choice">None</span></p>
+        </div>
+
+        <div id="result">
+            <p>Choose Rock, Paper, or Scissors to begin!</p>
+        </div>
+
+        <div class="buttons">
+            <button onclick="playGame('rock')">
+                <img src="rock.png" alt="Rock" class="choice-icon">
+                <p>Rock</p>
+            </button>
+            <button onclick="playGame('paper')">
+                <img src="paper.png" alt="Paper" class="choice-icon">
+                <p>Paper</p>
+            </button>
+            <button onclick="playGame('scissors')">
+                <img src="scissors.png" alt="Scissors" class="choice-icon">
+                <p>Scissors</p>
+            </button>
+        </div>
+
+        <div id="reset">
+            <button onclick="resetGame()">Reset Game</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
